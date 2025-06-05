@@ -29,7 +29,7 @@ const createRecipeObject = function (data) {
     ...(recipe.key && { key: recipe.key }),
   };
 };
-//console.log(state.recipe);
+
 export const loadRecipe = async function (id) {
   try {
     const data = await AJAX(`${API_URL}${id}?key=${KEY}`);
@@ -118,7 +118,6 @@ const init = function () {
 };
 
 init();
-console.log(state.bookmarks);
 
 const clearBookmarks = function () {
   localStorage.clear('bookmarks');

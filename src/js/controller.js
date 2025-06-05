@@ -10,10 +10,6 @@ import addRecipeView from './views/addRecipeView.js';
 import 'core-js/stable'; //polyfilling everything else
 import 'regenerator-runtime/runtime'; //polyfilling async/await
 
-if (module.hot) {
-  module.hot.accept();
-}
-
 // https://forkify-api.herokuapp.com/v2
 
 const controlRecipes = async function () {
@@ -75,7 +71,7 @@ const controlServings = function (newServings) {
   //update the recipe servings (in state)
   model.updateServing(newServings);
   // update the recipe view
-  // recipeView.render(model.state.recipe);
+
   recipeView.update(model.state.recipe);
 };
 
