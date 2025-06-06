@@ -10,10 +10,7 @@ import addRecipeView from './views/addRecipeView.js';
 import 'core-js/stable'; //polyfilling everything else
 import 'regenerator-runtime/runtime'; //polyfilling async/await
 
-import iconsSprite from 'bundle-text:../img/icons.svg';
 
-document.body.insertAdjacentHTML('afterbegin', iconsSprite);
-console.log(document.body.insertAdjacentHTML('afterbegin', iconsSprite));
 
 // https://forkify-api.herokuapp.com/v2
 
