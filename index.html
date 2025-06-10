@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="src/sass/main.scss" />
-    <script type="module" defer src="src/js/controller.js"></script>
+    <!-- <script defer src="src/js/controller.js"></script> -->
+    <script type="module" src="src/js/controller.js"></script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -27,9 +28,9 @@
             placeholder="Search over 1,000,000 recipes..."
           />
           <button class="btn search__btn">
-            <!-- <svg class="search__icon">
-              <use href="img/icons.svg#icon-search"></use>
-            </svg> -->
+            <svg class="search__icon">
+              <use href="src/img/icons.svg#icon-search"></use>
+            </svg>
             <span>Search</span>
           </button>
         </form>
@@ -38,26 +39,26 @@
           <ul class="nav__list">
             <li class="nav__item">
               <button class="nav__btn nav__btn--add-recipe">
-                <!-- <svg class="nav__icon">
-                  <use href="img/icons.svg#icon-edit"></use>
-                </svg> -->
+                <svg class="nav__icon">
+                  <use href="src/img/icons.svg#icon-edit"></use>
+                </svg>
                 <span>Add recipe</span>
               </button>
             </li>
             <li class="nav__item">
               <button class="nav__btn nav__btn--bookmarks">
-                <!-- <svg class="nav__icon">
-                  <use href="img/icons.svg#icon-bookmark"></use>
-                </svg> -->
+                <svg class="nav__icon">
+                  <use href="src/img/icons.svg#icon-bookmark"></use>
+                </svg>
                 <span>Bookmarks</span>
               </button>
               <div class="bookmarks">
                 <ul class="bookmarks__list">
                   <div class="message">
                     <div>
-                      <!-- <svg>
-                        <use href="img/icons.svg#icon-smile"></use>
-                      </svg> -->
+                      <svg>
+                        <use href="src/img/icons.svg#icon-smile"></use>
+                      </svg>
                     </div>
                     <p>
                       No bookmarks yet. Find a nice recipe and bookmark it :)
@@ -73,7 +74,7 @@
                         <h4 class="preview__name">
                           Pasta with Tomato Cream ...
                         </h4>
-                        <p class="preview__publisher">The Pioneer Woman</p>
+                        <p class="preview__author">The Pioneer Woman</p>
                       </div>
                     </a>
                   </li> -->
@@ -136,9 +137,12 @@
       <div class="recipe">
         <div class="message">
           <div>
-            <!-- <svg>
-              <use href="img/icons.svg#icon-smile"></use>
-            </svg> -->
+            <svg>
+              <!-- <use href="src/img/icons.svg#icon-smile"></use> -->
+              <path
+                d="M23 12c0-3.037-1.232-5.789-3.222-7.778s-4.741-3.222-7.778-3.222-5.789 1.232-7.778 3.222-3.222 4.741-3.222 7.778 1.232 5.789 3.222 7.778 4.741 3.222 7.778 3.222 5.789-1.232 7.778-3.222 3.222-4.741 3.222-7.778zM21 12c0 2.486-1.006 4.734-2.636 6.364s-3.878 2.636-6.364 2.636-4.734-1.006-6.364-2.636-2.636-3.878-2.636-6.364 1.006-4.734 2.636-6.364 3.878-2.636 6.364-2.636 4.734 1.006 6.364 2.636 2.636 3.878 2.636 6.364zM7.2 14.6c0 0 0.131 0.173 0.331 0.383 0.145 0.153 0.338 0.341 0.577 0.54 0.337 0.281 0.772 0.59 1.297 0.853 0.705 0.352 1.579 0.624 2.595 0.624s1.89-0.272 2.595-0.624c0.525-0.263 0.96-0.572 1.297-0.853 0.239-0.199 0.432-0.387 0.577-0.54 0.2-0.21 0.331-0.383 0.331-0.383 0.331-0.442 0.242-1.069-0.2-1.4s-1.069-0.242-1.4 0.2c-0.041 0.050-0.181 0.206-0.181 0.206-0.1 0.105-0.237 0.239-0.408 0.382-0.243 0.203-0.549 0.419-0.91 0.6-0.48 0.239-1.050 0.412-1.701 0.412s-1.221-0.173-1.701-0.413c-0.36-0.18-0.667-0.397-0.91-0.6-0.171-0.143-0.308-0.277-0.408-0.382-0.14-0.155-0.181-0.205-0.181-0.205-0.331-0.442-0.958-0.531-1.4-0.2s-0.531 0.958-0.2 1.4zM9 10c0.552 0 1-0.448 1-1s-0.448-1-1-1-1 0.448-1 1 0.448 1 1 1zM15 10c0.552 0 1-0.448 1-1s-0.448-1-1-1-1 0.448-1 1 0.448 1 1 1z"
+              ></path>
+            </svg>
           </div>
           <p>Start by searching for a recipe or an ingredient. Have fun!</p>
         </div>
@@ -321,9 +325,9 @@
         </div>
 
         <button class="btn upload__btn">
-          <!-- <svg>
-            <use href="img/icons.svg#icon-upload-cloud"></use>
-          </svg> -->
+          <svg>
+            <use href="src/img/icons.svg#icon-upload-cloud"></use>
+          </svg>
           <span>Upload</span>
         </button>
       </form>
