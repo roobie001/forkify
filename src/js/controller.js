@@ -62,7 +62,6 @@ const controlPagination = function (goToPage) {
 
   // 2) Render NEW pagination buttons
   paginationView.render(model.state.search);
-  console.log('Pagination data:', model.state.search);
 };
 
 const controlServings = function (newServings) {
@@ -96,7 +95,6 @@ const controlAddRecipe = async function (newRecipe) {
 
     // Upload the new recipe data
     await model.uploadRecipe(newRecipe);
-    console.log(model.state.recipe);
 
     // Render recipe
     recipeView.render(model.state.recipe);
