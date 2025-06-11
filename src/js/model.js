@@ -8,7 +8,7 @@ export const state = {
   search: {
     query: '',
     results: [],
-    resultPerPage: RES_PER_PAGE,
+    resultsPerPage: RES_PER_PAGE,
     page: 1,
   },
   bookmarks: [],
@@ -72,8 +72,8 @@ export const loadSearchResults = async function (query) {
 //implementing Pagination
 export const getSearchResultsPage = function (page = state.search.page) {
   state.search.page = page;
-  const start = (page - 1) * state.search.resultPerPage; //0
-  const end = page * state.search.resultPerPage; //9
+  const start = (page - 1) * state.search.resultsPerPage; //0
+  const end = page * state.search.resultsPerPage; //9
   return state.search.results.slice(start, end);
 };
 
