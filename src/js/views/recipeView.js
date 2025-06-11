@@ -1,6 +1,6 @@
 import View from './view.js';
 
-import icons from 'url:../../img/icons.svg'; // Parcel 2
+import icons from '../../img/icons.svg?url';
 // import { Fraction } from 'fractional';
 import fracty from 'fracty';
 
